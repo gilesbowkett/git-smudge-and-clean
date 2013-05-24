@@ -1,3 +1,3 @@
 #!/Users/giles/.rbenv/shims/ruby
 
-puts 'clean'
+/Users/giles/.rbenv/shims/ruby -e "exit(1)"

@@ -1,3 +1,3 @@
 #!/Users/giles/.rbenv/shims/ruby
 
-puts 'smudge'
+/Users/giles/.rbenv/shims/ruby -e "exit(1)"
