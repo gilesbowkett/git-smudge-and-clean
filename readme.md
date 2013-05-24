@@ -26,17 +26,17 @@ on `stdout` or `stderr`.
 
 However, "arbitrary Unix software" means you can
 implement these filters in a huge range of ways.
-The filters in this project are bash scripts, but
-you could easily substitute a Node.js "binary"
+You could easily use a Node.js "binary"
 prepared in the `npm` way, or a Ruby "binary"
 prepared in the `gem` way.
 
 The `clean` and `smudge` filters in this directory
-run simple one-line Ruby scripts to convert tabs
-into spaces when you check a file out, and convert
-spaces into tabs when you commit a file. They read
-from `stdin` and write to `stdout` using Ruby's
-`$stdin` and `$stdout` global variables.
+are simple bash scripts which run simple one-line
+Ruby commands. They convert tabs into spaces when
+you check a file out, and convert spaces into tabs
+when you commit a file. They read from `stdin`
+and write to `stdout` using Ruby's `$stdin` and
+`$stdout` global variables.
 
 The files `git.config.sample` and
 `git.attributes.sample` show lines you should
