@@ -31,8 +31,8 @@ into spaces when you check a file out, and convert
 spaces into tabs when you commit a file.
 
 The files `git.config.sample` and
-`git.attributes.sample` demo what your `config`
-and `attributes` files should look like in
+`git.attributes.sample` demo lines you should
+add to your `config` and `attributes` files in
 order to make this work. Those files live at
 either `.git/info/attributes` (project-local)
 or `.gitattributes` (global), for `attributes`,
