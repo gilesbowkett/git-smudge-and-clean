@@ -1,0 +1,3 @@
+#! env ruby
+
+puts 'clean'
