@@ -1,0 +1,3 @@
+[filter "tabs-to-spaces"]
+	clean = /Users/giles/code/learning/git/smudge-and-clean/clean
+	smudge = /Users/giles/code/learning/git/smudge-and-clean/smudge
