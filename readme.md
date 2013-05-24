@@ -18,17 +18,25 @@ http://git-scm.com/book/ch7-2.html
 
 Filters are arbitrary Unix software. They must
 conform to the standard interface for all Unix
-software: take input via `stdin`, exit with a 0
-for success or any number up to 255 for failure,
-etc. The filters in this project are bash scripts,
-but you could easily substitute a Node.js "binary"
+software: take input via `stdin`, write output to
+`stdout`, exit with a 0 for success or any number
+up to 255 for failure, etc. Unfortunately, git
+seems to suppress filter output whether it happens
+on `stdout` or `stderr`.
+
+However, "arbitrary Unix software" means you can
+implement these filters in a huge range of ways.
+The filters in this project are bash scripts, but
+you could easily substitute a Node.js "binary"
 prepared in the `npm` way, or a Ruby "binary"
 prepared in the `gem` way.
 
 The `clean` and `smudge` filters in this directory
 run simple one-line Ruby scripts to convert tabs
 into spaces when you check a file out, and convert
-spaces into tabs when you commit a file.
+spaces into tabs when you commit a file. They read
+from `stdin` and write to `stdout` using Ruby's
+`$stdin` and `$stdout` global variables.
 
 The files `git.config.sample` and
 `git.attributes.sample` show lines you should
