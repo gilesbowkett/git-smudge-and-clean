@@ -47,3 +47,24 @@ or `.gitattributes` (global), for `attributes`,
 and either `.git/config` (project-local) or
 `.gitconfig` (global), for `config`.
 
+### details
+
+Note that, 
+
+1. The `clean` and `smudge` filters in this
+   directory do *not* apply to *every* file.
+   Rather, they will only affect files with names
+   like `*.tabs`. This behavior is set by the
+   contents of the `attributes` file: for this
+   example, [git.attributes.sample][]. You can of
+   course change that behavior by editing that file.
+1. `git` needs to know where to find your `clean`
+   and `smudge` filters. You tell `git` where by
+   setting contents of the `config` file: for this
+   example, [git.config.sample][]. You will need
+   to edit that file (in your local repository) to
+   make the paths in that file match the locations
+   at which you have placed those scripts.
+
+git.attributes.sample: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.attributes.sample
+git.config.sample: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.config.sample
