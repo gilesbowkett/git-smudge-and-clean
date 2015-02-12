@@ -66,5 +66,5 @@ Note that,
    make the paths in that file match the locations
    at which you have placed those scripts.
 
-git.attributes.sample: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.attributes.sample
-git.config.sample: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.config.sample
+[git.attributes.sample]: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.attributes.sample
+[git.config.sample]: https://github.com/gilesbowkett/git-smudge-and-clean/raw/master/git.config.sample
