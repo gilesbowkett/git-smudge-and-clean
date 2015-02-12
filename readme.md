@@ -10,9 +10,7 @@ filters to demonstrate how they work.
 
 ## context
 
-More info here:
-
-http://git-scm.com/book/ch7-2.html
+[More info here](http://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes#Keyword-Expansion)
 
 ## how it works
 
